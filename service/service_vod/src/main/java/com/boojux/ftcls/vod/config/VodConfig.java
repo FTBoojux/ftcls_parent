@@ -1,6 +1,7 @@
 package com.boojux.ftcls.vod.config;
 
 import org.mybatis.spring.annotation.MapperScan;
+import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 /**
@@ -10,4 +11,6 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 @MapperScan("com.boojux.ftcls.vod.mapper")
 public class VodConfig {
+//    @Bean
+//    public Pagi
 }
