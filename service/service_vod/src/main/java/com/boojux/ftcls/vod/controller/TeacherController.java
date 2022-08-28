@@ -83,4 +83,36 @@ public class TeacherController {
         IPage<Teacher> teacherPage = teacherService.page(pageParam, wrapper);
         return Result.ok(teacherPage);
     }
+
+//    新增讲师
+    @ApiOperation(value = "新增")
+    @PostMapping("save")
+    public Result save(@RequestBody Teacher teacher) {
+        teacherService.save(teacher);
+        return Result.ok(null);
+    }
+
+//    按id查询讲师
+    @ApiOperation(value = "获取")
+    @GetMapping("get/{id}")
+    public Result get(@PathVariable Long id) {
+        Teacher teacher = teacherService.getById(id);
+        return Result.ok(teacher);
+    }
+
+//    按id修改讲师信息
+    @ApiOperation(value = "修改")
+    @PutMapping("update")
+    public Result updateById(@RequestBody Teacher teacher) {
+        teacherService.updateById(teacher);
+        return Result.ok(null);
+    }
+
+//    批量删除
+    @ApiOperation(value = "根据id列表删除")
+    @DeleteMapping("batchRemove")
+    public Result batchRemove(@RequestBody List<Long> idList) {
+        teacherService.removeByIds(idList);
+        return Result.ok(null);
+    }
 }
