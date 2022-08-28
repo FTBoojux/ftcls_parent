@@ -1,7 +1,7 @@
 package com.boojux.ftcls.vod.service.impl;
 
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import generator.com.boojux.ftcls.vod.Subject;
+import com.boojux.ftcls.model.vod.Subject;
 import com.boojux.ftcls.vod.service.SubjectService;
 import com.boojux.ftcls.vod.mapper.SubjectMapper;
 import org.springframework.stereotype.Service;

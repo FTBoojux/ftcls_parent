@@ -1,6 +1,6 @@
 package com.boojux.ftcls.vo.order;
 
-import com.atguigu.ggkt.model.order.OrderInfo;
+import com.boojux.ftcls.model.order.OrderInfo;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 

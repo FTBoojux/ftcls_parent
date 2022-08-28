@@ -1,7 +1,7 @@
 package com.boojux.ftcls.vo.live;
 
-import com.atguigu.ggkt.model.live.LiveCourse;
-import com.atguigu.ggkt.model.vod.Teacher;
+import com.boojux.ftcls.model.live.LiveCourse;
+import com.boojux.ftcls.model.vod.Teacher;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 
